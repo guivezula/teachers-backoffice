@@ -1,0 +1,46 @@
+{
+  "my-classes": [
+    {
+      "title": "Introdução a lógica da programação",
+      "views": 1000,
+      "date": "2023-02-23",
+      "category": "Lógica"
+    },
+    {
+      "title": "Condicionais",
+      "views": 1000,
+      "date": "2023-02-23",
+      "category": "Lógica"
+    },
+    {
+      "title": "Switch cases",
+      "views": 1000,
+      "date": "2023-02-23",
+      "category": "Lógica"
+    },
+    {
+      "title": "Laços",
+      "views": 1000,
+      "date": "2023-02-23",
+      "category": "Lógica"
+    }
+  ],
+  "schedules": [
+    {
+      "time": "08:00",
+      "title": "Introdução a Lógica da programação"
+    },
+    {
+      "time": "09:00",
+      "title": "Condicionais"
+    },
+    {
+      "time": "11:00",
+      "title": "Do While"
+    },
+    {
+      "time": "11:00",
+      "title": "Foreach"
+    }
+  ]
+}
