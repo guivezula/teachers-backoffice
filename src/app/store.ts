@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { classesReducer } from '../reducers/my-classes/my-classes.reducers';
+import { schedulesReducer } from '../reducers/schedules/schedules.reducers';
 
 export const store = configureStore({
   reducer: {
-    classes: classesReducer
+    classes: classesReducer,
+    schedules: schedulesReducer,
   },
 });
 
