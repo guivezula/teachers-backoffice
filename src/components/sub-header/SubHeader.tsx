@@ -1,5 +1,6 @@
 import React from "react";
 import { RiTimer2Line } from "react-icons/ri";
+import { Divider } from "../divider/Divider";
 
 interface SubHeaderProps {
   user: {
@@ -8,17 +9,19 @@ interface SubHeaderProps {
     location: string;
   };
   classStartIn: number;
+  amount: number;
   onGoToClass?: () => void;
 }
 
 export const SubHeader: React.FC<SubHeaderProps> = ({
   user: { avatarUrl, name, location },
   classStartIn,
+  amount,
   onGoToClass,
 }) => {
   return (
-    <div className="p-8 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] grid grid-col-12">
-      <div className="col-span-3 font-poppins not-italic font-medium">
+    <div className="p-8 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] flex flex-row justify-between items-center">
+      <div className="font-poppins not-italic font-medium">
         <span className="leading-[24px] text-gray-dark text-base">
           Sua aula começa em
         </span>
@@ -29,7 +32,14 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
           </span>
         </div>
       </div>
-      <div className="col-span-9"></div>
+      <div className="flex">
+        <Divider />
+        <div>avatar</div>
+        <Divider />
+        <div>amount</div>
+        <Divider />
+        <div>button</div>
+      </div>
     </div>
   );
 };

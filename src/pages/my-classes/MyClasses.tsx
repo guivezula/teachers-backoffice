@@ -10,6 +10,7 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
       <div className="col-span-9">
         <SubHeader
           classStartIn={15}
+          amount={1000}
           user={{
             avatarUrl: userAvatar,
             location: "Curitiba, PR",
