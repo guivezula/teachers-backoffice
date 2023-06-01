@@ -1,11 +1,17 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Header } from "./components/header/Header";
+import { MyClasses } from "./pages/my-classes/MyClasses";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-    </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/minhas-aulas" />} />
+        <Route path="minhas-aulas" element={<MyClasses />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
