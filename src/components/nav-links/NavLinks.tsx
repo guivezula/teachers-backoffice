@@ -12,7 +12,6 @@ export const NavLink: React.FC<NavLinksProps> = ({
   onSelect,
 }) => {
   const isActive = (link: string) => link === activeLink;
-  console.log(activeLink);
   return (
     <div className="flex flex-row justify-start items-center font-poppins col-start-2 col-end-5">
       {links.map((link, key) => (

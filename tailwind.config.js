@@ -29,9 +29,6 @@ module.exports = {
       boxShadow: {
         "3xl": "8px 8px 16px 4px rgba(133, 139, 146, 0.06);",
       },
-      borderWidth: {
-        "border-custom": "0.5px",
-      },
     },
   },
   plugins: [],

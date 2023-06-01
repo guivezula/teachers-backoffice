@@ -1,5 +1,4 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { Header } from "./components/header/Header";
 import { MyClasses } from "./pages/my-classes/MyClasses";
 

@@ -7,9 +7,7 @@ import { NavLink } from "../nav-links/NavLinks";
 import { UserSettings } from "../user-settings/UserSettings";
 import { HeaderUtils } from "./header.utils";
 
-interface HeaderProps {}
-
-export const Header: React.FC<HeaderProps> = () => {
+export const Header: React.FC = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState<string | undefined>();
 
