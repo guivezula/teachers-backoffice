@@ -26,7 +26,8 @@ export const Header: React.FC = () => {
       </div>
       <div className="flex justify-end items-center">
         <div className="flex items-center">
-          <IoIosNotificationsOutline className="w-5 h-6 text-gray-medium" />
+          <IoIosNotificationsOutline className="w-5 h-6 text-gray-medium"></IoIosNotificationsOutline>
+          <div className="bg-blue-dark rounded-full p-1 relative top-1 right-2 translate-y-[-100%] translate-x-[10%]" />
         </div>
         <div className="flex items-center">
           <Divider />
