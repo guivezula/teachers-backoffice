@@ -15,7 +15,7 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
 
   useEffect(() => {
     dispach(fetchMyClasses());
-  }, []);
+  }, [dispach]);
 
   return (
     <div className="grid grid-cols-12 h-[100%] gap-10 mt-12">
