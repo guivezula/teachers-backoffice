@@ -29,7 +29,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
         </span>
         <div className="flex justify-start items-center">
           <RiTimer2Line className="text-gray-medium w-4 h-4 mr-3" />
-          <span className="text-gray-medium_dark text-xs leading-5">
+          <span className="text-gray-dark-medium text-xs leading-5">
             {`${classStartIn} min.`}
           </span>
         </div>
@@ -45,7 +45,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
             </span>
             <div className="flex justify-start items-center">
               <TiLocation className="text-gray-medium w-4 h-4 mr-3" />
-              <span className="text-gray-medium_dark text-xs leading-5 font-medium">
+              <span className="text-gray-dark-medium text-xs leading-5 font-medium">
                 {location}
               </span>
             </div>
@@ -56,7 +56,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
           <span className="text-gray-dark text-sm leading-6 font-medium">
             {`R$ ${amount}`}
           </span>
-          <span className="text-gray-medium_dark text-xs leading-5 font-medium">
+          <span className="text-gray-dark-medium text-xs leading-5 font-medium">
             Gastos deste mês
           </span>
         </div>

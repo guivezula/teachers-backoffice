@@ -5,11 +5,13 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        roboto: "Roboto",
       },
       colors: {
         gray: {
           dark: "#1A1E2C",
-          medium_dark: "#313131",
+          "dark-medium": "#313131",
+          "dark-light": "#5D606B",
           medium: "#8E94A7",
           light: "#E7E9F0",
           stroke: "#EBEBF9",
