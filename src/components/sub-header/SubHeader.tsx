@@ -22,7 +22,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
   onGoToClass,
 }) => {
   return (
-    <div className="p-8 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] flex flex-row justify-between items-center">
+    <div className="p-8 mb-12 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] flex flex-row justify-between items-center">
       <div className="font-poppins not-italic font-medium">
         <span className="leading-6 text-gray-dark text-base">
           Sua aula começa em

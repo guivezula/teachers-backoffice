@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { MyClass } from "../../models/my-class.models";
-import { CardList } from "../card/Card";
+import { Card } from "../card/Card";
 import { ClassItem } from "../class-item/ClassItem";
 
 interface MyClassesListProps {
@@ -14,11 +14,8 @@ export const MyClassesList: React.FC<MyClassesListProps> = ({ classes }) => {
   );
 
   return (
-    <CardList
-      buttonLabel="Criar uma nova Aula"
-      title="Minhas aulas já preparadas"
-    >
+    <Card buttonLabel="Criar uma nova Aula" title="Minhas aulas já preparadas">
       <div>{memoList}</div>
-    </CardList>
+    </Card>
   );
 };
