@@ -29,7 +29,7 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
 
   return (
     <div className="grid grid-cols-12 h-[100%] gap-10 mt-12">
-      <div className="col-span-9">
+      <div className="col-span-9 max-sm:col-span-12">
         <SubHeader
           classStartIn={15}
           amount={1000}
@@ -39,11 +39,16 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
             name: "Annette Black",
           }}
         />
-        <MyClassesList classes={classes} />
+        <div className="max-sm:hidden">
+          <MyClassesList classes={classes} />
+        </div>
       </div>
-      <div className="col-span-3 [&>*:not(:last-child)]:mb-[10px]">
+      <div className="col-span-3 max-sm:col-span-12 [&>*:not(:last-child)]:mb-[10px]">
         <Views />
         <NextClasses schedules={schedules} />
+        <div className="sm:hidden">
+          <MyClassesList classes={classes} />
+        </div>
       </div>
     </div>
   );
