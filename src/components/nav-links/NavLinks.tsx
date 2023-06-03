@@ -13,7 +13,7 @@ export const NavLink: React.FC<NavLinksProps> = ({
 }) => {
   const isActive = (link: string) => link === activeLink;
   return (
-    <div className="flex flex-row justify-start items-center font-poppins col-start-2 col-end-5">
+    <div className="flex flex-row justify-start items-center font-poppins col-start-2 col-end-5 max-sm:hidden">
       {links.map((link, key) => (
         <a
           href="/"

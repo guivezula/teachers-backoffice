@@ -6,3 +6,9 @@ body {
     background-color: #F6F7FB;
     padding: 80px;
 }
+
+@media not all and (min-width: 640px) {
+    body {
+        padding: 35px;
+    }
+}
