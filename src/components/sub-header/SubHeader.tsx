@@ -22,7 +22,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
   onGoToClass,
 }) => {
   return (
-    <div className="p-8 mb-12 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] flex flex-row justify-between items-center">
+    <div className="p-8 max-sm:p-4 mb-12 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] flex flex-row justify-between items-center">
       <div className="font-poppins not-italic font-medium">
         <span className="leading-6 text-gray-dark text-base">
           Sua aula começa em
@@ -36,7 +36,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
       </div>
       <div className="flex items-center">
         <Divider />
-        <div className="flex items-center flex-row">
+        <div className="flex items-center flex-row max-sm:hidden">
           <img className="w-12 h-12 mr-4" src={avatarUrl} alt="user" />
           <div className="bg-[#00D555] border-[1px] border-white rounded-full p-1 relative top-0 right-0 translate-y-[-20px] translate-x-[-30px]" />
           <div>
@@ -52,7 +52,7 @@ export const SubHeader: React.FC<SubHeaderProps> = ({
           </div>
         </div>
         <Divider />
-        <div className="flex flex-col justify-center items-start font-poppins">
+        <div className="flex flex-col justify-center items-start font-poppins max-sm:hidden">
           <span className="text-gray-dark text-sm leading-6 font-medium">
             {`R$ ${amount}`}
           </span>
