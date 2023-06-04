@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { MyClass } from "../../models/my-class.models";
-import { Date } from "./Date";
-import { Update } from "./Update";
-import { View } from "./View";
+import { ClassItemDate } from "./ClassItemDate";
+import { ClassItemUpdate } from "./ClassItemUpdate";
+import { ClassItemView } from "./ClassItemView";
 
 interface ClassItemProps {
   myClass: MyClass;
@@ -17,18 +17,18 @@ export const ClassItem: FC<ClassItemProps> = ({
         <div className="font-poppins not-italic font-medium text-xs leading-5 text-white  rounded-[24px] bg-blue-dark mr-2 px-4 py-2 max-sm:w-full max-sm:text-center">
           {category}
         </div>
-        <View views={views} />
+        <ClassItemView views={views} />
         <div className="font-roboto not-italic font-normal text-[13px] leading-[21px] text-gray-dark-light flex items-center max-sm:font-bold max-sm:text-[15px]">
           {title}
         </div>
         <div className="sm:hidden flex flex-row justify-start items-center gap-12 mb-3">
-          <Date date={date} />
-          <Update />
+          <ClassItemDate date={date} />
+          <ClassItemUpdate />
         </div>
       </div>
-      <View views={views} smHidden />
-      <Date date={date} smHidden />
-      <Update smHidden />
+      <ClassItemView views={views} smHidden />
+      <ClassItemDate date={date} smHidden />
+      <ClassItemUpdate smHidden />
     </div>
   );
 };

@@ -3,7 +3,9 @@ interface UpdateProps {
   smHidden?: boolean;
 }
 
-export const Update: React.FC<UpdateProps> = ({ smHidden = false }) => {
+export const ClassItemUpdate: React.FC<UpdateProps> = ({
+  smHidden = false,
+}) => {
   return (
     <div
       className={`${
