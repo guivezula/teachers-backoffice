@@ -12,14 +12,12 @@ interface SubHeaderProps {
   };
   classStartIn: number;
   amount: number;
-  onGoToClass?: () => void;
 }
 
 export const SubHeader: React.FC<SubHeaderProps> = ({
   user: { avatarUrl, name, location },
   classStartIn,
   amount,
-  onGoToClass,
 }) => {
   return (
     <div className="p-8 max-sm:p-4 mb-12 max-sm:mb-7 bg-orange-light border-[0.5px] rounded-3xl shadow-3xl w-[100%] flex flex-row justify-between items-center">
