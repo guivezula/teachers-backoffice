@@ -1,5 +1,5 @@
 import React from "react";
-import { DateUtils } from "./dates.utils";
+import { DateUtils } from "./date.utils";
 
 interface DateProps {
   date: string;
