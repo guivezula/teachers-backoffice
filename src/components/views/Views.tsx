@@ -75,7 +75,7 @@ export const Views: React.FC<ViewsProps> = ({
     },
   };
   return (
-    <Card title="Visuazlizações" info>
+    <Card title="Visualizações" info>
       <Chart options={info.options as any} series={info.series} />
     </Card>
   );
