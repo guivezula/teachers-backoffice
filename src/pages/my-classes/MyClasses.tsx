@@ -28,7 +28,7 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
   }, [dispach]);
 
   return (
-    <div className="grid grid-cols-12 h-[100%] gap-10 mt-12">
+    <div className="grid grid-cols-12 h-[100%] gap-10 mt-12 max-sm:mt-8 max-sm:gap-0">
       <div className="col-span-9 max-sm:col-span-12">
         <SubHeader
           classStartIn={15}
@@ -43,7 +43,7 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
           <MyClassesList classes={classes} />
         </div>
       </div>
-      <div className="col-span-3 max-sm:col-span-12 [&>*:not(:last-child)]:mb-[10px]">
+      <div className="col-span-3 max-sm:col-span-12 [&>*:not(:last-child)]:mb-[10px] max-sm:[&>*:not(:last-child)]:mb-8">
         <Views />
         <NextClasses schedules={schedules} />
         <div className="sm:hidden">
