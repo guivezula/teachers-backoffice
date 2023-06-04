@@ -34,7 +34,6 @@ const formatedDate = (originDate: string) => {
   const splited = originDate.split("-").map((n) => Number(n));
   const date = new Date(splited[0], splited[1] - 1, splited[2]);
   const diff = diffDays(date);
-  console.log(diff);
 
   if (diff === 0) {
     return "hoje";
