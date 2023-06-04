@@ -15,7 +15,7 @@ export const MyClassesList: React.FC<MyClassesListProps> = ({ classes }) => {
 
   return (
     <Card buttonLabel="Criar uma nova Aula" title="Minhas aulas já preparadas">
-      <div>{memoList}</div>
+      <div data-testid="list-section">{memoList}</div>
     </Card>
   );
 };
