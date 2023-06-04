@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import user from "../../assets/images/mock_user.png";
 import { Divider } from "../divider/Divider";
-import { NavLink } from "../nav-links/NavLinks";
+import { NavLinks } from "../nav-links/NavLinks";
 import { UserSettings } from "../user-settings/UserSettings";
 import { HeaderUtils } from "./header.utils";
 
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
       <div className="flex justify-start items-center">
         <img className="w-32 h-12" src={logo} alt="logo" />
         <Divider />
-        <NavLink activeLink={activeLink} links={HeaderUtils.getAllLinks()} />
+        <NavLinks activeLink={activeLink} links={HeaderUtils.getAllLinks()} />
       </div>
       <div className="flex justify-end items-center">
         <div className="flex items-center">
