@@ -16,7 +16,7 @@ export const NavLinks: React.FC<NavLinksProps> = ({ links, activeLink }) => {
         <a
           href="/"
           key={key}
-          data-testid={`kink-item-${key}`}
+          data-testid={`link-item-${key}`}
           className={`${
             isActive(link) ? "text-blue-dark" : "text-gray-medium"
           } font-medium leading-6 not-italic text-sm mr-12`}

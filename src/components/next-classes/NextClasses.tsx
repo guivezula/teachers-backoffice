@@ -24,7 +24,7 @@ export const NextClasses: React.FC<NextClassesProps> = ({ schedules }) => {
         <h2 className="font-poppins no-italic font-semibold text-base leading-5 text-back mb-8">
           Hoje
         </h2>
-        <div>{memoList}</div>
+        <div data-testid="schedules-list-section">{memoList}</div>
       </>
     </Card>
   );

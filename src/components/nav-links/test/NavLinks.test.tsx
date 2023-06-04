@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { NavLinks } from "../NavLinks";
 
-describe("MyClassesList", () => {
+describe("NavLinks", () => {
   let links: string[];
   beforeAll(() => {
     links = ["dashboard", "minhas aulas", "alunos"];
