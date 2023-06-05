@@ -24,7 +24,10 @@ export const MyClasses: React.FC<MyClassesProps> = () => {
   }, [dispach]);
 
   return (
-    <div className="grid grid-cols-12 h-[100%] gap-10 mt-12 max-sm:mt-8 max-sm:gap-0">
+    <div
+      data-testid="my-classes-page"
+      className="grid grid-cols-12 h-[100%] gap-10 mt-12 max-sm:mt-8 max-sm:gap-0"
+    >
       <div className="col-span-9 max-sm:col-span-12">
         <SubHeader
           classStartIn={15}

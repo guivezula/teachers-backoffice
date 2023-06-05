@@ -6,5 +6,5 @@ const getAll = async (): Promise<Schedule[]> =>
   );
 
 export const SchedulesService = {
-    getAll,
-}
+  getAll,
+};
