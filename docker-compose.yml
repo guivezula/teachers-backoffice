@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web:
+    container_name: backoffice-web-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: guivezula/backoffice-web-repo
+    ports:
+      - '3000:80'
+    
